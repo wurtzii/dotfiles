@@ -54,6 +54,7 @@
 		    Enable = "Source,Sink,Media,Socket";
 	    };
     };
+    services.blueman.enable = true;
 
 # rtkit is optional but recommended
     security.rtkit.enable = true;
