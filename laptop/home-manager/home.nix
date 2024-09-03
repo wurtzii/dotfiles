@@ -25,6 +25,10 @@
       sessionVariables = {
         EDITOR = "nvim";
       };
+
+      packages = with pkgs; [
+        bibletime
+      ];
     };
 
     programs.home-manager.enable = true;
@@ -52,5 +56,5 @@
     xdg.systemDirs.data = ["${config.home.homeDirectory}/.nix-profile/share/applications"];
 
     systemd.user.startServices = "sd-switch";
-    home.stateVersion = "24.05";
+    home.stateVersion = "23.11";
   }

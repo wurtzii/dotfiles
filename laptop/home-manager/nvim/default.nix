@@ -9,7 +9,7 @@
     home.packages = with pkgs; [
         tree-sitter
         ripgrep
-        clang_18
+        # clang_18
         zig
     ];
 

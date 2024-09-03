@@ -39,6 +39,8 @@
         nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
     };
 
+    programs.steam.enable = true;
+
 # Configure network proxy if necessary
 # networking.proxy.default = "http://user:password@proxy:port/";
 # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
@@ -85,9 +87,11 @@
         isNormalUser = true;
         description = "gabriel";
         extraGroups = [ "networkmanager" "wheel" ];
-        packages = with pkgs; [];
+        packages = with pkgs; [
+	];
     };
 
+    programs.thunar.enable = true;
 # List packages installed in system profile. To search, run:
 # $ nix search wget
     environment.systemPackages = with pkgs; [
