@@ -28,15 +28,19 @@
 
     programs.home-manager.enable = true;
     programs.git = {
-      enable = true;
-      userName = "wurtzii";
-      userEmail = "wurtzii05@gmail.com";
+        enable = true;
+        userName = "wurtzii";
+        userEmail = "wurtzii05@gmail.com";
 
-      extraConfig = {
-        core = {
-	  editor = "nvim";
-	};
-      };
+        extraConfig = {
+            core = {
+                editor = "nvim";
+            };
+
+            init = {
+                defaultBranch = "main";
+            };
+        };
     };
 
 
