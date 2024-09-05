@@ -52,9 +52,9 @@
     hardware.bluetooth.powerOnBoot = true;
     hardware.enableAllFirmware = true;
     hardware.bluetooth.settings = {
-	    General = {
-		    Enable = "Source,Sink,Media,Socket";
-	    };
+        General = {
+            Enable = "Source,Sink,Media,Socket";
+        };
     };
     services.blueman.enable = true;
 
@@ -88,13 +88,17 @@
         description = "gabriel";
         extraGroups = [ "networkmanager" "wheel" ];
         packages = with pkgs; [
-	];
+            thunderbird
+            libreoffice
+            localsend
+        ];
     };
 
     programs.thunar.enable = true;
 # List packages installed in system profile. To search, run:
 # $ nix search wget
     environment.systemPackages = with pkgs; [
+        unzip
 #  wget
     ];
 
@@ -115,7 +119,7 @@
 # networking.firewall.allowedTCPPorts = [ ... ];
 # networking.firewall.allowedUDPPorts = [ ... ];
 # Or disable the firewall altogether.
-# networking.firewall.enable = false;
+networking.firewall.enable = false;
 
 # This value determines the NixOS release from which the default
 # settings for stateful data, like file locations and database versions
