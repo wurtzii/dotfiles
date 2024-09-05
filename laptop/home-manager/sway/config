@@ -27,7 +27,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ./backgrounds/1920x1080-dark-linux.png fill
+output * bg ./backgrounds/wallhaven-x6m79l_1920x1080.png fill
 #
 # Example configuration:
 #
