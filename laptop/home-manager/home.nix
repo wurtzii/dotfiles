@@ -10,6 +10,7 @@
       ./nvim
       ./sway
       ./tmux
+      ./bash
     ];
 
     nixpkgs = {
