@@ -27,9 +27,12 @@
       };
 
       packages = with pkgs; [
-        bibletime
+        (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+        okular
       ];
     };
+
+    fonts.fontconfig.enable = true;
 
     programs.home-manager.enable = true;
     programs.lazygit.enable = true;

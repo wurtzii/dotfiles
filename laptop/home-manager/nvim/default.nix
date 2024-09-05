@@ -9,8 +9,10 @@
     home.packages = with pkgs; [
         tree-sitter
         ripgrep
-        # clang_18
+        gcc
         zig
+        gnumake
+        luajitPackages.luarocks-nix
     ];
 
     programs.neovim = {
