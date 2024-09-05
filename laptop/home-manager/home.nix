@@ -9,6 +9,7 @@
     imports = [
       ./nvim
       ./sway
+      ./tmux
     ];
 
     nixpkgs = {
