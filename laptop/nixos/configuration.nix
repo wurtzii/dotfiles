@@ -91,6 +91,7 @@
             thunderbird
             libreoffice
             localsend
+            htop
         ];
     };
 
