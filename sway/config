@@ -43,6 +43,10 @@ bindsym --locked XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@
 # brightness keys 
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+# keyboard backlight 
+
+bindsym --locked XF86KbdBrightnessUp exec brightnessctl --device smc::kbd_backlight set 5%+
+bindsym --locked XF86KbdBrightnessDown exec brightnessctl --device smc::kbd_backlight set 5%-
 ### Idle configuration
 #
 # Example configuration:

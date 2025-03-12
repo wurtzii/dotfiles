@@ -19,3 +19,6 @@ vim.keymap.set('v', '<leader>d', '\"_d')
 vim.keymap.set('i', '<C-c>', '<Esc>')
 vim.keymap.set('n', 'Q', 'nop')
 
+vim.keymap.set('n', '<leader>k', ":bnext<CR>")
+vim.keymap.set('n', '<leader>j', ":bprevious<CR>")
+vim.keymap.set('n', '<leader>x', ':bdelete<CR>')

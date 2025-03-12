@@ -26,3 +26,9 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
+vim.diagnostic.config({
+  float = {
+    max_width = 100,  -- Increase width
+    max_height = 20,  -- Increase height
+  },
+})
