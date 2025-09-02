@@ -1,1 +1,3 @@
-vim.cmd [[colorscheme moonfly]]
+return {
+	"sainnhe/everforest",
+}

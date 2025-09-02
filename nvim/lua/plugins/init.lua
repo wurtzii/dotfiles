@@ -1,6 +1,0 @@
-require("plugins.color")
-require("plugins.telescope")
-require("plugins.harpoon")
-require("plugins.treesitter")
-require("plugins.lsp_zero")
-require("plugins.neorg")

@@ -1,3 +1,2 @@
-vim.g.mapleader = " "
-require("gabe")
-require("plugins")
+require("gabriel")
+
