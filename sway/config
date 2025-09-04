@@ -34,8 +34,12 @@ include /etc/sway/config-vars.d/*
 # output HDMI-A-1 resolution 1920x1080 position 2560,0 transform 270
 exec nwg-panel
 exec swaync
+exec waybar
 
-output * resolution  2560x1920 position 0,0 scale 1.5
+
+include output.config
+# output eDP-1 resolution 1920x1200 position 0,0 scale 1
+# output * resolution  2560x1920 position 0,0 scale 1
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
@@ -66,7 +70,7 @@ bindsym --locked XF86KbdBrightnessDown exec brightnessctl --device smc::kbd_back
 
 ### Input configuration
 #
-# Example configuration:
+#e Example configuration:
 #
 #   input "2:14:SynPS/2_Synaptics_TouchPad" {
 #       dwt enabled
@@ -132,17 +136,6 @@ bindsym --locked XF86KbdBrightnessDown exec brightnessctl --device smc::kbd_back
     bindsym $mod+Shift+Right move right
     # Workspaces:
 
-    # bind to monitors
-    workspace 1 output DP-3
-    workspace 2 output DP-3
-    workspace 3 output DP-3
-    workspace 4 output DP-3
-    workspace 5 output DP-3
-    workspace 6 output HDMI-A-1
-    workspace 7 output HDMI-A-1
-    workspace 8 output HDMI-A-1
-    workspace 9 output HDMI-A-1
-    workspace 10 output HDMI-A-1
     # Switch to workspace
     bindsym $mod+1 workspace number 1
     bindsym $mod+2 workspace number 2
