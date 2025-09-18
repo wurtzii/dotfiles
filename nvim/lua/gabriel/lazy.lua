@@ -24,7 +24,7 @@ require("lazy").setup({
     -- import your plugins
     { import = "plugins" },
   },
-  install = { colorscheme = { "everforest" } },
+  install = { colorscheme = { "carbonfox" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })

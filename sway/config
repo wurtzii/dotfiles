@@ -89,6 +89,7 @@ bindsym --locked XF86KbdBrightnessDown exec brightnessctl --device smc::kbd_back
     mouse_warping container
     smart_borders on
     # Start a terminal
+    bindsym $mod+e exec "swaylock -u --color 000000"
     bindsym $mod+Return exec $term
 
     # Kill focused window
@@ -159,6 +160,9 @@ bindsym --locked XF86KbdBrightnessDown exec brightnessctl --device smc::kbd_back
     bindsym $mod+Shift+9 [con_id=__focused__] move container to workspace number 9, focus
     bindsym $mod+Shift+0 [con_id=__focused__] move container to workspace number 10, focus
     bindsym $mod+Shift+period [con_id=__focused__] move output right, focus
+    
+    bindsym $mod+Shift+n move scratchpad
+    bindsym $mod+n scratchpad show
 #
 # Layout stuff:
 #
