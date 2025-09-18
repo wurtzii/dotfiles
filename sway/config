@@ -89,7 +89,7 @@ bindsym --locked XF86KbdBrightnessDown exec brightnessctl --device smc::kbd_back
     mouse_warping container
     smart_borders on
     # Start a terminal
-    bindsym $mod+e exec "swaylock -u --color 000000"
+    bindsym $mod+Shift+e exec "swaylock -u --color 000000"
     bindsym $mod+Return exec $term
 
     # Kill focused window
